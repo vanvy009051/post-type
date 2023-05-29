@@ -1,0 +1,193 @@
+#singlePage__breadcrum {
+    background: linear-gradient(90deg, #B8B8B8 0%, rgba(184, 184, 184, 0) 100%);
+}
+
+// .singlePage__breadcrum {
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-start;
+//     gap: 6px;
+
+//     & a {
+//         text-decoration: none;
+//         font-size: 14px;
+//         line-height: 16px;
+//         color: #ffffff;
+
+//         &:hover {
+//             color: #C50000;
+//         }
+//     }
+
+//     &-icon {
+//         font-size: 14px;
+//         line-height: 16px;
+//         color: #ffffff;
+//     }
+// }
+
+// Body
+
+#singlePage__body {
+
+
+    .singlePage__body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 18px 0;
+        gap: 18px;
+    }
+
+    .singlePage__content {
+        display: flex;
+        flex-direction: row;
+        
+        &-heading {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: justify;
+            color: #5C5C5C;
+            margin-bottom: 8px;
+        }
+
+        &-desc {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: justify;
+            color: #5C5C5C;
+        }
+
+        &-sub {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            &__heading {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
+                display: flex;
+                align-items: center;
+                color: #454545;
+            }
+
+            &__news {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            &__link {
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #5C5C5C;
+            }
+        }
+    }
+
+    .singlePage__relate {
+        gap: 18px 0;
+
+        &-heading {
+            position: relative;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            padding: 0 12px;
+            color: #454545;
+
+            &::before {
+                position: absolute;
+                content: "";
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: 3px;
+                height: 16px;
+                background-color: red;
+                border-radius: 3px;
+            }
+        }
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 0;
+            margin: 0 12px;
+        }
+
+        &-image {
+
+            & img {
+                display: flex;
+                margin: 0 auto;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding: 8px;
+        }
+
+        &-title {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            color: #5C5C5C;
+        }
+
+        &-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        &-icons {
+            font-size: 12px;
+            line-height: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #8A8A8A;
+
+            & i {
+                margin-right: 4px;
+            }
+        }
+
+        &-desc {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #5C5C5C;
+        }
+
+        &-link {
+            text-decoration: none;
+            color: #5C5C5C;
+            
+            &:hover .singlePage__relate-title {
+                color: #C50000;
+            }
+        }
+    }
+}

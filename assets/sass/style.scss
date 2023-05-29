@@ -1,0 +1,121 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+body {
+  min-height: 100vh;
+}
+
+:root {
+    --primary-color: #5C5C5C;
+    --secondary-color: #F5F5F5;
+    --gray: #FAF5EF;
+    --primary-font: 'Inter';
+    --secondary-font: 'Prata';
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.container {
+    max-width: 1424px !important;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.breadcrumbs-link {
+  padding: 8px 0px;
+  list-style: none;
+  color: #FFFFFF;
+
+  a {
+      color: #FFFFFF;
+      text-decoration: none;
+      &:hover{
+          // font-weight: bold;
+          color: #C50000;
+          transition: .3s;
+      }
+  }
+
+  a:last-child {
+      color: #C50000;
+      // font-weight: bold;
+  }
+  @media (max-width:540px) {
+      margin-bottom: 0px;
+  }
+}
+
+@import "home";
+@import "header";
+@import "about";
+@import "contact";
+@import "single";
+@import "news";
+@import "woo";
+@import "footer";
